@@ -1,1 +1,0 @@
-# royalIntegrity-send-email-web-app
