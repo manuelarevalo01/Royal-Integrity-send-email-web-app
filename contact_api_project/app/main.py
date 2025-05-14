@@ -23,6 +23,7 @@ origins = [
     "http://localhost:8081", 
     #URL desplegada
     "https://www.royalintegrity.com.co",
+    "https://royal-integrity-send-email-web-app.onrender.com/"
 ]
 
 app.add_middleware(
