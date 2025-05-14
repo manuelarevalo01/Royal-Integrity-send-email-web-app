@@ -1,0 +1,29 @@
+# Ignorar entorno virtual
+venv/
+.venv/
+
+# Ignorar archivos de caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar Git
+.git/
+.gitignore
+
+# Ignorar configuraciones IDE/OS
+.vscode/
+.idea/
+.DS_Store
+
+# Ignorar Dockerfile y .dockerignore (a veces útil si se copian al contexto)
+Dockerfile
+.dockerignore
+
+# ¡MUY IMPORTANTE! No incluir secretos en la imagen
+.env
+
+# Otros archivos que no necesites en producción
+README.md
+*.log

@@ -1,9 +1,0 @@
-# contact_api_project/requirements.txt
-fastapi
-uvicorn
-python-dotenv
-Jinja2
-emails
-httpx
-gunicorn
-pydantic[email]

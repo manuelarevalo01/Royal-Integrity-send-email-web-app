@@ -20,6 +20,7 @@ origins = [
     "http://localhost:8080", 
     "http://localhost:3000", 
     "http://127.0.0.1:8080",
+    "http://localhost:8081", 
     #URL desplegada
     "https://www.royalintegrity.com.co",
 ]
@@ -52,6 +53,7 @@ async def verify_recaptcha(token: str, remote_ip: Optional[str] = None) -> bool:
 
     async with httpx.AsyncClient() as client:
         try:
+            logger.info(f"reCAPTCHA: {RECAPTCHA_SECRET_KEY}")
             response = await client.post('https://www.google.com/recaptcha/api/siteverify', data=params)
             response.raise_for_status()
             result = response.json()
