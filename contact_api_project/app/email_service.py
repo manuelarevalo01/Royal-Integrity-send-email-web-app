@@ -79,8 +79,8 @@ async def send_internal_notification_email(form_data: ContactFormData):
     <h2>Nueva Solicitud de Contacto Recibida</h2>
     <p><strong>Nombre:</strong> {form_data.customer_name}</p>
     <p><strong>Email:</strong> {form_data.corporate_mail}</p>
-    <p><strong>Teléfono:</strong> {form_data.telephone}</p>"
-    "<p><strong>Compañía (del cliente):</strong> {form_data.company}</p>"
+    <p><strong>Teléfono:</strong> {form_data.telephone}</p>
+    <p><strong>Compañía (del cliente):</strong> {form_data.company}</p>
     <p><strong>Aceptó Política:</strong> {'Sí' if form_data.accept_policy else 'No'}</p>
     <p><strong>Solicitud/Mensaje:</strong></p>
     <pre>{form_data.requests if form_data.requests else "No proporcionado"}</pre>
